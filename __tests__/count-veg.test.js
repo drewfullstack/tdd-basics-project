@@ -1,7 +1,7 @@
 const countVeg = require("../katas/count-veg");
 
 /* base case - if type input is empty array, return []
- case 2 - if veg type is empty string, return 0
+ case 2 - if veg type is empty string, return 0 s
 
 example
 countVeg([
