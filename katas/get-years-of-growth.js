@@ -1,4 +1,4 @@
-function getYearsOfGrowth(initialPop, endPop, r, m) {
+function getYearsOfGrowth(initialPop, endPop, growthRate, netMigration) {
   if (endPop === 0) {
     return 0;
   }
@@ -7,7 +7,7 @@ function getYearsOfGrowth(initialPop, endPop, r, m) {
   }
   let currentPop = initialPop;
   for (let currentYear = 1; currentYear < 10000; currentYear++) {
-    currentPop += currentPop * r + m;
+    currentPop += currentPop * growthRate + netMigration;
     if (currentPop >= endPop) {
       return currentYear;
     }
